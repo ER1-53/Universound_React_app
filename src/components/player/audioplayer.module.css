@@ -1,0 +1,31 @@
+.playBox {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+ 	background-color: var(--neon-blue-shadow);
+	border: solid 2px var(--neon-blue);
+	box-shadow: 2px 2px 10px var(--neon-blue-shadow);
+	border-radius: 10px;
+	width: 100% - 40px;
+	min-width: 460px ;
+	margin-bottom: 20px;
+    margin: 0 20px;
+}
+.heart {
+	margin: 0 20px;
+	width: 50px;
+	height: 50px;
+	background-image: url(../../images/cardiology_FILL0_wght400_GRAD0_opsz24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.heart:hover {
+	background-image: url(../../images/heart_plus_FILL0_wght400_GRAD0_opsz24.png);
+}
+
+@media only screen and (max-width: 500px) {
+  .playBox {
+		flex-direction: column;
+		min-width: 0px;
+	}
+}
